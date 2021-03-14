@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html,
+body,
+#root {
+  background: #fff;
+}
+.puzzle h1 {
+  font-size: 48px;
+}
+.puzzle h1,
+.puzzle p {
+  margin: 10px;
+}
+.puzzle {
+  text-align: center;
+}
+.board {
+  font-family: "Lobster", cursive;
+  min-width: 300px;
+  margin: 10px;
+}
+.board html,
+.board body,
+.board #root {
+  background: azure;
+  height: 100%;
+}
+.board .puzzle h1 {
+  font-size: 48px;
+}
+.board .puzzle h1,
+.board .puzzle p {
+  margin: 10px;
+}
+.board .puzzle input {
+  margin-left: 10px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.board .board .square {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  background: lightgreen;
+  border: 1px solid darkgreen;
+  line-height: 60px;
+  text-align: center;
+}
+.board .board .square.zero {
+  background: beige;
+}
+.board .square {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  border: 1px solid;
+  text-align: center;
+}
+.board .square.zero {
+  border: 1px solid;
 }
